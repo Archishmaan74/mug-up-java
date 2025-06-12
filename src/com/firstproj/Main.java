@@ -1,4 +1,6 @@
 package com.firstproj;
+import java.util.Arrays;
+import java.util.Scanner;
 
 public class Main {
     public static void main(String[] args) {
@@ -22,7 +24,7 @@ public class Main {
 
         // Non primitive
 
-        // String
+        // Strings
         // Strings are immutable in JAVA
         String name = "Archishmaan";  // It's not compulsory to write new for string
         System.out.println(name.length());
@@ -44,5 +46,37 @@ public class Main {
         // substring
         String substringCheck = concat.substring(13, 21);
         System.out.println(substringCheck);
+
+        // Arrays
+        int[] marks = new int[3];
+        Scanner sc = new Scanner(System.in);
+        for(int i=0; i<marks.length; i++) {
+            System.out.print("Enter mark " + (i + 1) + ": ");
+            marks[i] = sc.nextInt();
+        }
+
+        System.out.println("You entered:");
+        for(int i=0; i<marks.length; i++) {
+            System.out.println(marks[i]);
+        }
+
+        // sort
+        Arrays.sort(marks);
+        System.out.println("Sorted marks:");
+        for(int i=0; i<marks.length; i++) {
+            System.out.println(marks[i]);
+        }
+
+        // If Array elements are known
+        int[] ages = {20,40,60};
+
+        // 2-D Array
+        int[][] marksOfTwo = {{98, 93}, {88, 99}};
+        System.out.println("2-D marks:");
+        for(int i=0; i<marksOfTwo.length; i++) {
+            for (int j=0; j<marksOfTwo.length; j++){
+                System.out.println(marksOfTwo[i][j]);
+            }
+        }
     }
 }
