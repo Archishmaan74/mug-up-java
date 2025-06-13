@@ -1,6 +1,8 @@
 package com.firstproj;
 
+import java.util.ArrayList;
 import java.util.Arrays;
+import java.util.InputMismatchException;
 import java.util.Scanner;
 
 public class Main {
@@ -105,7 +107,7 @@ public class Main {
 
         Main obj = new Main();
         obj.doWhile();
-
+        obj.expceptionHandling();
     }
     // do while loop
     public void doWhile(){
@@ -118,5 +120,30 @@ public class Main {
         }while (numb > 0);
 
         System.out.println("The END");
+    }
+
+    // Exception Handling using dynamic arrays
+    // Try/catch
+    public void expceptionHandling(){
+        Scanner sc = new Scanner(System.in);
+        ArrayList<Integer> marks = new ArrayList<>();
+        System.out.print("Enter total subjects: ");
+        int n = sc.nextInt();
+
+        try{
+            for(int i=0; i<n; i++){
+                System.out.print("Input marks of " + (i+1) + " subject: " );
+                int mark = sc.nextInt();
+                marks.add(mark);
+            }
+
+            for (int i=0; i<n; i++){
+                System.out.println("Entered marks: " + marks.get(i));
+            }
+        } catch (InputMismatchException e){
+            System.out.println("Pls enter a valid input!");
+        } catch (Exception e) {
+            System.out.println("Something went wrong: " + e.getMessage());
+        }
     }
 }
