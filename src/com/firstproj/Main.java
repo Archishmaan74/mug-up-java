@@ -102,5 +102,21 @@ public class Main {
         // String = sc.next()
         // int age = sc.nextInt()
         // float value = sc.nextFloat()
+
+        Main obj = new Main();
+        obj.doWhile();
+
+    }
+    // do while loop
+    public void doWhile(){
+        Scanner sc = new Scanner(System.in);
+        int numb = 0;
+        do{
+            System.out.print("Enter any number:");
+            numb= sc.nextInt();
+            System.out.println("You entered: " + numb);
+        }while (numb > 0);
+
+        System.out.println("The END");
     }
 }
