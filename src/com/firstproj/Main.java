@@ -88,5 +88,19 @@ public class Main {
         // constants
         final float PI = 3.14F;
         // PI = 12;
+
+        // Math class in Java
+        // max
+        System.out.println("Maximum out of 56 and 76:" + Math.max(56,76));
+        // min
+        System.out.println("Minimum out of 56 and 76:" + Math.min(56,76));
+
+        // random with explicit type cast
+        System.out.println("Random integers: "+ (int)(Math.random()*100));
+
+        // For input
+        // String = sc.next()
+        // int age = sc.nextInt()
+        // float value = sc.nextFloat()
     }
 }
