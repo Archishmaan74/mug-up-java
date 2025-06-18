@@ -8,7 +8,7 @@ import java.util.Scanner;
 public class Main {
     public static void main(String[] args) {
         // Types in JAVA
-        /* byte - 1 bytes [-128 to 127]
+        /* byte - 1 byte [-128 to 127]
         short - 2 bytes
         int - 4 bytes
         long - 8 bytes [big int values]
@@ -107,7 +107,7 @@ public class Main {
 
         Main obj = new Main();
         obj.doWhile();
-        obj.expceptionHandling();
+        obj.exceptionHandling();
     }
     // do while loop
     public void doWhile(){
@@ -124,7 +124,7 @@ public class Main {
 
     // Exception Handling using dynamic arrays
     // Try/catch
-    public void expceptionHandling(){
+    public void exceptionHandling(){
         Scanner sc = new Scanner(System.in);
         ArrayList<Integer> marks = new ArrayList<>();
         System.out.print("Enter total subjects: ");
