@@ -1,6 +1,7 @@
 package com.firstproj;
 
 import java.util.ArrayList;
+import java.util.LinkedList;
 
 public class CollectionFramework {
     public static void main(String[] args){
@@ -25,5 +26,12 @@ public class CollectionFramework {
         arrayList.addAll(arrayList2);
         System.out.println("Joining two array lists: "+ arrayList);
 
+        // LinkedList
+        LinkedList<Integer> linkedList = new LinkedList<>();
+        linkedList.add(11);
+        linkedList.add(22);
+        linkedList.add(33);
+
+        System.out.println("Linked List: "+ linkedList);
     }
 }
