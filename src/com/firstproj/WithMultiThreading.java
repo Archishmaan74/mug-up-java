@@ -12,10 +12,6 @@ public class WithMultiThreading {
 
         try {
             thread1.join();
-        } catch (InterruptedException e) {
-            throw new RuntimeException(e);
-        }
-        try{
             thread2.join();
         } catch (InterruptedException e) {
             throw new RuntimeException(e);
