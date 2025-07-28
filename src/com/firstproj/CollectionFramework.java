@@ -2,6 +2,7 @@ package com.firstproj;
 
 import java.util.ArrayList;
 import java.util.HashSet;
+import java.util.LinkedHashSet;
 import java.util.LinkedList;
 
 public class CollectionFramework {
@@ -42,5 +43,13 @@ public class CollectionFramework {
         hashSet.add(11);
 
         System.out.println("HashSet: "+hashSet);
+
+        // LinkedHashSet -- maintains the order in which elements are inserted
+        LinkedHashSet<Integer> linkedHashSet = new LinkedHashSet<>();
+        linkedHashSet.add(1);
+        linkedHashSet.add(2);
+        linkedHashSet.add(3);
+        linkedHashSet.contains(2);
+        System.out.println("LinkedHashSet: "+linkedHashSet);
     }
 }
