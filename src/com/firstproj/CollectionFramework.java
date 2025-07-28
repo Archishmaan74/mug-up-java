@@ -1,6 +1,7 @@
 package com.firstproj;
 
 import java.util.ArrayList;
+import java.util.HashSet;
 import java.util.LinkedList;
 
 public class CollectionFramework {
@@ -33,5 +34,13 @@ public class CollectionFramework {
         linkedList.add(33);
 
         System.out.println("Linked List: "+ linkedList);
+
+        // HashSet -- Hash means that same input will have same output
+        HashSet<Integer> hashSet = new HashSet<>();
+        hashSet.add(11);
+        hashSet.add(11);
+        hashSet.add(11);
+
+        System.out.println("HashSet: "+hashSet);
     }
 }
