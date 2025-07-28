@@ -8,7 +8,7 @@ import java.util.Scanner;
 public class Main {
     public static void main(String[] args) {
         // Types in JAVA
-        /* byte - 1 bytes [-128 to 127]
+        /* byte - 1 byte [-128 to 127]
         short - 2 bytes
         int - 4 bytes
         long - 8 bytes [big int values]
@@ -107,7 +107,7 @@ public class Main {
 
         Main obj = new Main();
         obj.doWhile();
-        obj.expceptionHandling();
+        obj.exceptionHandling();
     }
     // do while loop
     public void doWhile(){
@@ -124,7 +124,7 @@ public class Main {
 
     // Exception Handling using dynamic arrays
     // Try/catch
-    public void expceptionHandling(){
+    public void exceptionHandling(){
         Scanner sc = new Scanner(System.in);
         ArrayList<Integer> marks = new ArrayList<>();
         System.out.print("Enter total subjects: ");
@@ -146,4 +146,16 @@ public class Main {
             System.out.println("Something went wrong: " + e.getMessage());
         }
     }
+    // Spring Boot is a Java framework that makes it easier to build web applications and backend services quickly.
+    // Normally, setting up a Java project with Spring requires a lot of configuration, but Spring Boot removes most of that setup by giving you defaults.
+    // It helps you start coding right away without worrying about all the complex setup details.
+    //
+    //One of its best features is "auto-configuration".
+    // This means Spring Boot looks at your project and automatically sets things up based on what it finds.
+    // For example, if you add a database dependency, it will configure a connection for you.
+    // This saves a lot of time and makes life easier for developers who want to focus on building features, not configuration.
+    //
+    //Spring Boot also comes with a built-in web server, so you don't need to install Tomcat or any other server separately.
+    // Just run your app like a regular Java program, and it starts working.
+    // In short, Spring Boot is like a ready-made setup for creating powerful web apps in Java—simple, fast, and flexible.
 }
