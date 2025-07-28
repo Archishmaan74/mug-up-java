@@ -1,9 +1,6 @@
 package com.firstproj;
 
-import java.util.ArrayList;
-import java.util.HashSet;
-import java.util.LinkedHashSet;
-import java.util.LinkedList;
+import java.util.*;
 
 public class CollectionFramework {
     public static void main(String[] args){
@@ -51,5 +48,13 @@ public class CollectionFramework {
         linkedHashSet.add(3);
         linkedHashSet.contains(2);
         System.out.println("LinkedHashSet: "+linkedHashSet);
+
+        // HashMap
+        HashMap<Integer, String> hashMap = new HashMap<>();
+        hashMap.put(1, "Archishmaan");
+        hashMap.put(2, "Yatharth");
+        hashMap.put(3, "Samarth");
+
+        System.out.println("HashMap: " + hashMap.get(2));
     }
 }
